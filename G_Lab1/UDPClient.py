@@ -9,7 +9,7 @@ The client receives the modified data and displays the line on its screen
 
 from socket import *       # allows the creation of sockets 
 
-serverName = 'hostname'    
+serverName = '127.0.0.1'    
 serverPort = 12000
 clientSocket = socket(AF_INET, SOCK_DGRAM)
 message = input('Input lowercase sentence: ')
