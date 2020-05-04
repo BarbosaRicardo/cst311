@@ -27,7 +27,7 @@ For this assignment with about 10 lines of code, you may prefer to simply use an
 The naming convention of the file should be
 
 ```
-PA1_your_last_names_in_alphabetic_order.py
+PA1_barbosa_halbert_reynolds_sedano.py
 ```
 
 - **Put your names in the program as well**
