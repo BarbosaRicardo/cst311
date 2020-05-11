@@ -20,9 +20,9 @@ serverSocket = socket(AF_INET, SOCK_DGRAM)
 serverSocket.bind(('', serverPort))
 print("The server is ready to receive")
 
-# allo UDP to to recieve anf process packets from clients
+# allow UDP to to recieve and process packets from clients
 while True:
-   
+
    # accepts client and creates new socket (connectionSocket) in the server
    message, clientAddress = serverSocket.recvfrom(2048)
    modifiedMessage = message.decode().upper()
