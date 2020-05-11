@@ -10,13 +10,13 @@ The server sends the modified data to the client
 # socket module
 from socket import *
 
-# initialize variables
+# initialize variable
 serverPort = 12000
 
 # server creates a TCP socket
 serverSocket = socket(AF_INET, SOCK_STREAM)
 
-# associate server port with TCP socket
+# associate serverPort(12000) with TCP socket
 serverSocket.bind(('', serverPort))
 
 # wait for client 
