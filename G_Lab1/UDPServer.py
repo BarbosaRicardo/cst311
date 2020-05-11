@@ -22,7 +22,6 @@ print("The server is ready to receive")
 
 # allow UDP to to recieve and process packets from clients
 while True:
-
    # accepts client and creates new socket (connectionSocket) in the server
    message, clientAddress = serverSocket.recvfrom(2048)
    modifiedMessage = message.decode().upper()
