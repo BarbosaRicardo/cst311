@@ -1,22 +1,22 @@
 # initialize variables 
-SampleRTT = 40.617
+SampleRTT = 80
 SampleRTT1 = 30
 SampleRTT2 = 40
 SampleRTT3 = 100
-SampleRTT4 = 50
+SampleRTT4 = 40
 
 # initialize round trip times
-EstimatedRTT = 0
-DevRTT = 0
+EstimatedRTT = SampleRTT
+DevRTT = SampleRTT/2
 Timeout = 0
 
 # initialize alpha and beta
-a = 0.875
+a = 0.125
 b = 0.25
 
 EstimatedRTT = (1-a)*EstimatedRTT + a*SampleRTT
 DevRTT = (1-b)*DevRTT + b*abs(SampleRTT - EstimatedRTT)
-print("EstimatedRTT1: ", EstimatedRTT)
+print("\nEstimatedRTT1: ", EstimatedRTT)
 print("DevRTT1: ", DevRTT)
 print("\n")
 
