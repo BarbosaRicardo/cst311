@@ -28,7 +28,6 @@ while True:
       print()
       
       cont = input("Continue (Y or N)?: ")
-
       if(cont.lower() == 'y'):
          continue
       else:

@@ -38,7 +38,6 @@ print("EstimatedRTT4: ", EstimatedRTT)
 print("DevRTT4: ", DevRTT)
 print("\n")
 
-
 EstimatedRTT = (1-a)*EstimatedRTT + a*SampleRTT4
 DevRTT = (1-b)*DevRTT + b*abs(SampleRTT4 - EstimatedRTT)
 print("EstimatedRTT FINAL: ", EstimatedRTT)
